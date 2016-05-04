@@ -94,7 +94,12 @@ shinyUI(fluidPage(
     				accept=c('text/csv','text/comma-separated-values,text/plain','.csv')),
     			h4("Frequentist results"),
 				tableOutput("crudemodData"),
-    			h4("Bayesian results"),
+    			h4("Bayesian results"),			    
+				  br(),
+			    p("fy = average observed outcome"),
+			    p("fy0 = average outcome, had x been set to 0 for everyone (g-formula)"),
+			    p("rd = fy[intervention] - fy0 (set intervention on left tab) (g-formula)"),
+			    p("OR, beta parameters directly from Bayesian logistic model"),
 				dataTableOutput("bayesmodData"),
 				h4("Prior and posterior distributions"),
 				fluidRow(

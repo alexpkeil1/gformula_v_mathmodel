@@ -90,7 +90,7 @@ shinyUI(fluidPage(
 			    p("Priors: beta_x ~ N(prior mean, prior variance)"),
 			    p("Priors: beta_z ~ N(prior mean, prior variance)"),
 			    br(),
-    			fileInput('indata', 'Upload data (csv, three bernoulli variables named x,y,z)', 
+    			fileInput('indata', 'Upload data (csv, three variables named x,y,z [y must be in [0,1]])', 
     				accept=c('text/csv','text/comma-separated-values,text/plain','.csv')),
     			h4("Frequentist results"),
 				tableOutput("crudemodData"),

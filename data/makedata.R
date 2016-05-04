@@ -7,14 +7,14 @@ write.csv(data.frame(z=z,x=x,y=y), "~/Documents/programming_examples/R/_mine/shi
 
 set.seed(12123)
 N = 50
-z = rnorm(N, 0, 1)
-x = rnorm(N, 3*z, 1)
+z = round(rnorm(N, 0, 1), 3)
+x = round(rnorm(N, 3*z, 1), 3)
 y = rbinom(N, 1, 1/(1+exp(-(-0.5 - 1 + z + 2*x))))
 write.csv(data.frame(z=z,x=x,y=y), "~/Documents/programming_examples/R/_mine/shiny/gformula_slider/data/testdata2.csv", row.names=FALSE)
 
 set.seed(12123)
 N = 50
-z = rnorm(N, 0, 1)
-x = rnorm(N, 3*z, 1)
-y = rbinom(N, 1, 1/(1+exp(-(1.5 - 1 + z - 2*x))))
+z = round(rnorm(N, 0, 1), 3)
+x = round(rnorm(N, 3*z, 1), 3)
+y = rbinom(N, 1, 1/(1+exp(-(1.5 - 1 - z - 2*x))))
 write.csv(data.frame(z=z,x=x,y=y), "~/Documents/programming_examples/R/_mine/shiny/gformula_slider/data/testdata3.csv", row.names=FALSE)

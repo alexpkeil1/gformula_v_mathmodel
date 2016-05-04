@@ -16,5 +16,5 @@ set.seed(12123)
 N = 50
 z = rnorm(N, 0, 1)
 x = rnorm(N, 3*z, 1)
-y = rbinom(N, 1, 1/(1+exp(-(0.5 - 1 + z - 2*x))))
+y = rbinom(N, 1, 1/(1+exp(-(1.5 - 1 + z - 2*x))))
 write.csv(data.frame(z=z,x=x,y=y), "~/Documents/programming_examples/R/_mine/shiny/gformula_slider/data/testdata3.csv", row.names=FALSE)

@@ -81,6 +81,8 @@ shinyUI(fluidPage(
 			),
 			
     		tabPanel("Logistic model",
+			    br(),
+			    p("0. Install 'shiny' and 'Rstan' packages in R"),
     			fileInput('indata', 'Upload data (csv, three bernoulli variables named x,y,z)', 
     				accept=c('text/csv','text/comma-separated-values,text/plain','.csv')),
     			h4("Frequentist results"),

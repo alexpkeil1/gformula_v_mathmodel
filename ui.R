@@ -82,7 +82,11 @@ shinyUI(fluidPage(
 			
     		tabPanel("Logistic model",
 			    br(),
-			    p("0. Install 'shiny' and 'Rstan' packages in R"),
+			    p("Model: log-odds(y) = beta_0 + beta_x*x + beta_z*z"),
+			    p("Priors: beta_0 ~ N(prior mean, prior variance)"),
+			    p("Priors: beta_x ~ N(prior mean, prior variance)"),
+			    p("Priors: beta_z ~ N(prior mean, prior variance)"),
+			    br(),
     			fileInput('indata', 'Upload data (csv, three bernoulli variables named x,y,z)', 
     				accept=c('text/csv','text/comma-separated-values,text/plain','.csv')),
     			h4("Frequentist results"),

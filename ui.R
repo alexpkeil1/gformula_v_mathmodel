@@ -73,7 +73,7 @@ shinyUI(fluidPage(
 			p("0. Install 'shiny' and 'Rstan' packages in R"),
 			p("\n\n1. Download sample data (to your local drive) from", 
       a("here:", href="https://raw.githubusercontent.com/alexpkeil1/gformula_v_mathmodel/master/data/testdata.csv", target="_blank")),
-			p("2. Upload data from step 1 (using 'upload data button' on logistic model tab), be a little patient"),
+			p("2. Upload data from step 1 (using 'Choose file' button on logistic model tab), be a little patient"),
 			p("3. ?"),
 			p("4. Profit"),
 			p("5. Play around with priors, MCMC settings in left tab (better to do this before uploading data, once you have this figured out)")

@@ -75,8 +75,9 @@ shinyUI(fluidPage(
       a("here:", href="https://github.com/alexpkeil1/gformula_v_mathmodel/blob/master/data/testdata.csv", target="_blank"),
 			p("2. Go to logistic model tab"),
 			p("3. Upload data from step 1, be a little patient"),
-			p("4. Profit"),
-			p("5. Play around with priors, MCMC settings in left tab (better to do this before uploading data, once you have this figured out)")
+			p("4. ?"),
+			p("5. Profit"),
+			p("6. Play around with priors, MCMC settings in left tab (better to do this before uploading data, once you have this figured out)")
 			
 			),
 			

@@ -72,7 +72,7 @@ shinyUI(fluidPage(
 			br(),
 			p("0. Install 'shiny' and 'Rstan' packages in R"),
 			p("\n\n1. Download sample data from", 
-      a("here:", href="https://github.com/alexpkeil1/gformula_v_mathmodel/blob/master/data/testdata.csv", target="_blank")),
+      a("here:", href="https://raw.githubusercontent.com/alexpkeil1/gformula_v_mathmodel/master/data/testdata.csv", target="_blank")),
 			p("2. Go to logistic model tab"),
 			p("3. Upload data from step 1, be a little patient"),
 			p("4. ?"),

@@ -1,5 +1,6 @@
 ### gformula_v_mathmodel ###
-Implementation of the Bayesian g-formula
+Implementation of the Bayesian g-formula.
+
 See link to paper [here](http://arxiv.org/abs/1512.04809)
 
 Purpose: give heuristic to show the relations between mathematical modeling and the Bayesian g-formula

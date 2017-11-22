@@ -52,9 +52,9 @@ shinyServer(function(input, output, session) {
 		real bz;
 		}
 		model{
-		 b0 ~ normal(',input$b0mean,', sqrt(', input$b0var*1.0,'));
-		 bx ~ normal(',input$b1mean,', sqrt(', input$b1var*1.0,'));
-		 bz ~ normal(',input$b2mean,',sqrt(', input$b2var*1.0,'));
+		 b0 ~ normal(',input$b0mean,', ', input$b0var*1.0,');
+		 bx ~ normal(',input$b1mean,', ', input$b1var*1.0,');
+		 bz ~ normal(',input$b2mean,',', input$b2var*1.0,');
 		 
 		 y ~ bernoulli_logit(b0 + bx * x + bz * z);
 		}

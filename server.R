@@ -33,7 +33,7 @@ shinyServer(function(input, output, session) {
 	crudeModel <- reactive({
 		dat <- newData()
 		if(is.null(dat)) return(NULL)
-		glm(dat$y ~ dat$x + dat$z, family=binomial)
+		summary(glm(dat$y ~ dat$x + dat$z, family=binomial))$coefficients
 	})
 
 	stanModel <- reactive({

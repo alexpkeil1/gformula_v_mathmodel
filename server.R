@@ -62,15 +62,17 @@ shinyServer(function(input, output, session) {
 		  real fy;
 		  real fy0;
 		  real rd;
-		  real fyi[N];
-		  real fyi0[N];
 		  real or_x;
-		  for(n in 1:N){
-		  	fyi[n] = inv_logit(b0 + bx * ',input$xset,' + bz * z[n]);
-		  	fyi0[n] = inv_logit(b0 + bz * z[n]);
+		  {
+		    real fyi[N];
+		    real fyi0[N];
+		    for(n in 1:N){
+		    	fyi[n] = inv_logit(b0 + bx * ',input$xset,' + bz * z[n]);
+		    	fyi0[n] = inv_logit(b0 + bz * z[n]);
+		    }
+		    fy = mean(fyi);
+		    fy0 = mean(fyi0);
 		  }
-		  fy = mean(fyi);
-		  fy0 = mean(fyi0);
 		  rd = fy-fy0;
 		  or_x = exp(bx);
 		}')
